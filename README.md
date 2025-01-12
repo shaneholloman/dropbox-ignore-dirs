@@ -23,4 +23,5 @@ This means you can:
 - Run the Bash script when using your Dropbox on Linux/macOS
 - Switch between operating systems freely without conflicts
 
-After running either script, remember to restart Dropbox for the changes to take effect.
+> [!TIP]
+> After running either script, remember to restart Dropbox for the changes to take effect.
