@@ -35,8 +35,8 @@ echo -e "\n${CYAN}Starting Dropbox directory ignore process...${NC}\n"
 for dir_name in "${DIRS_TO_IGNORE[@]}"; do
     echo -e "${YELLOW}Searching for '$dir_name' directories...${NC}"
 
-    # Find all matching directories
-    mapfile -t directories < <(find "$DROPBOX_PATH" -type d -name "$dir_name" 2>/dev/null)
+    # Find all matching directories - macOS compatible version
+    IFS=$'\n' read -r -d '' -a directories < <(find "$DROPBOX_PATH" -type d -name "$dir_name" 2>/dev/null; printf '\0')
     dir_count=${#directories[@]}
 
     if [ "$dir_count" -eq 0 ]; then
