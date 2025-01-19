@@ -1,4 +1,6 @@
-# Dropbox Directory Ignore Scripts
+# Drops
+
+Dropbox Directory Ignore Scripts
 
 These scripts help you configure Dropbox to ignore specific development directories (`.venv`, `.conda`, `node_modules`) that don't need to be synced across machines.
 
